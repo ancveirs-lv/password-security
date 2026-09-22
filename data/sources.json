@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-09-22",
+  "sources": [
+    {
+      "id": "nist_sp800_63b_4",
+      "title": "NIST SP 800-63B — Authentication and Authenticator Management",
+      "publisher": "NIST",
+      "scope": "global/authentication",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "status": "primary"
+    },
+    {
+      "id": "owasp_asvs_5_v6_2",
+      "title": "OWASP ASVS 5.0 — V6.2 Password Security",
+      "publisher": "OWASP",
+      "scope": "application/service requirements",
+      "url": "https://github.com/OWASP/ASVS/blob/master/5.0/en/0x15-V6-Authentication.md",
+      "status": "primary"
+    },
+    {
+      "id": "ncsc_three_random_words",
+      "title": "Three random words",
+      "publisher": "UK NCSC",
+      "scope": "user guidance",
+      "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/three-random-words",
+      "status": "supporting"
+    },
+    {
+      "id": "ncsc_password_policy",
+      "title": "Password policy: updating your approach",
+      "publisher": "UK NCSC",
+      "scope": "system owner guidance",
+      "url": "https://www.ncsc.gov.uk/collection/passwords/updating-your-approach",
+      "status": "supporting"
+    },
+    {
+      "id": "enisa_cyber_hygiene",
+      "title": "Cyber Hygiene",
+      "publisher": "ENISA",
+      "scope": "user guidance",
+      "url": "https://www.enisa.europa.eu/topics/cyber-hygiene",
+      "status": "supporting"
+    }
+  ]
+}

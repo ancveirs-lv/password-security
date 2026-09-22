@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "language": "en",
+  "verified_at": "2026-09-22",
+  "rules": [
+    {
+      "id": "P01",
+      "title": "Prefer phishing-resistant authentication",
+      "guidance": "Use passkeys or another phishing-resistant authentication method when a service offers one. Passwords are not phishing-resistant.",
+      "audience": "user",
+      "sources": [
+        "nist_sp800_63b_4",
+        "enisa_cyber_hygiene"
+      ]
+    },
+    {
+      "id": "P02",
+      "title": "Use a unique password for every account",
+      "guidance": "Password reuse turns one service breach into a risk to other accounts.",
+      "audience": "user",
+      "sources": [
+        "ncsc_three_random_words",
+        "enisa_cyber_hygiene"
+      ]
+    },
+    {
+      "id": "P03",
+      "title": "Use a password manager",
+      "guidance": "Let a reputable password manager generate and store long, random, unique passwords. Protect the manager itself with strong authentication.",
+      "audience": "user",
+      "sources": [
+        "nist_sp800_63b_4",
+        "owasp_asvs_5_v6_2",
+        "ncsc_password_policy"
+      ]
+    },
+    {
+      "id": "P04",
+      "title": "Prefer length and unpredictability over symbol recipes",
+      "guidance": "When you must create a password you can remember, use a long passphrase that is not based on personal facts or predictable substitutions.",
+      "audience": "user",
+      "sources": [
+        "nist_sp800_63b_4",
+        "ncsc_three_random_words"
+      ]
+    },
+    {
+      "id": "P05",
+      "title": "Spaces are allowed — but they are not magic",
+      "guidance": "A space is a valid password character and can make passphrases easier to build, but it is not magic. Security comes from the whole password: length, unpredictability and uniqueness, not from one character.",
+      "audience": "both",
+      "sources": [
+        "nist_sp800_63b_4"
+      ]
+    },
+    {
+      "id": "P06",
+      "title": "Do not rely on composition rules",
+      "guidance": "Forcing uppercase, lowercase, digits and special characters creates predictable workarounds and is not a substitute for length, blocklists and rate limiting.",
+      "audience": "service",
+      "sources": [
+        "nist_sp800_63b_4",
+        "owasp_asvs_5_v6_2",
+        "ncsc_password_policy"
+      ]
+    },
+    {
+      "id": "P07",
+      "title": "Do not rotate passwords on a calendar",
+      "guidance": "Change a password when there is evidence or reasonable suspicion of compromise, or when it was reused in another compromised service. Do not require arbitrary periodic changes.",
+      "audience": "both",
+      "sources": [
+        "nist_sp800_63b_4",
+        "owasp_asvs_5_v6_2"
+      ]
+    },
+    {
+      "id": "P08",
+      "title": "Block common and compromised passwords",
+      "guidance": "Services should reject common, expected and compromised passwords and explain the rejection clearly.",
+      "audience": "service",
+      "sources": [
+        "nist_sp800_63b_4",
+        "owasp_asvs_5_v6_2"
+      ]
+    },
+    {
+      "id": "P09",
+      "title": "Allow password managers, paste and long inputs",
+      "guidance": "Services should permit paste/autofill, accept broad character sets including spaces, verify the password exactly as submitted, and support at least 64 characters.",
+      "audience": "service",
+      "sources": [
+        "nist_sp800_63b_4",
+        "owasp_asvs_5_v6_2"
+      ]
+    },
+    {
+      "id": "P10",
+      "title": "Protect recovery paths and respond quickly to compromise",
+      "guidance": "Secure the primary email account and recovery methods. If a password may be compromised, change it, revoke old sessions where possible and review account recovery settings.",
+      "audience": "user",
+      "sources": [
+        "enisa_cyber_hygiene"
+      ]
+    }
+  ]
+}

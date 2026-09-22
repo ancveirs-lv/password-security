@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "language": "lv",
+  "verified_at": "2026-09-22",
+  "rules": [
+    {
+      "id": "P01",
+      "title": "Dod priekšroku pret pikšķerēšanu noturīgai autentifikācijai",
+      "guidance": "Ja pakalpojums piedāvā passkey vai citu pret pikšķerēšanu noturīgu autentifikācijas veidu, izmanto to. Parole pati par sevi nav noturīga pret pikšķerēšanu.",
+      "audience": "user",
+      "sources": [
+        "nist_sp800_63b_4",
+        "enisa_cyber_hygiene"
+      ]
+    },
+    {
+      "id": "P02",
+      "title": "Katram kontam izmanto unikālu paroli",
+      "guidance": "Vienas paroles atkārtota lietošana pārvērš viena servisa noplūdi par risku citiem kontiem.",
+      "audience": "user",
+      "sources": [
+        "ncsc_three_random_words",
+        "enisa_cyber_hygiene"
+      ]
+    },
+    {
+      "id": "P03",
+      "title": "Izmanto paroļu pārvaldnieku",
+      "guidance": "Ļauj uzticamam paroļu pārvaldniekam ģenerēt un glabāt garas, nejaušas un unikālas paroles. Pašu pārvaldnieku aizsargā ar stipru autentifikāciju.",
+      "audience": "user",
+      "sources": [
+        "nist_sp800_63b_4",
+        "owasp_asvs_5_v6_2",
+        "ncsc_password_policy"
+      ]
+    },
+    {
+      "id": "P04",
+      "title": "Garums un neparedzamība ir svarīgāki par simbolu recepti",
+      "guidance": "Ja pašam jāizveido iegaumējama parole, izvēlies garu paroļu frāzi, kas nav balstīta personiskos faktos vai paredzamās aizvietošanās.",
+      "audience": "user",
+      "sources": [
+        "nist_sp800_63b_4",
+        "ncsc_three_random_words"
+      ]
+    },
+    {
+      "id": "P05",
+      "title": "Atstarpe parolē ir atļauta — bet tā nav maģija",
+      "guidance": "Atstarpe ir derīga paroles rakstzīme un var palīdzēt veidot paroļu frāzi. Drošību nosaka visa parole: garums, neparedzamība un unikalitāte, nevis viena rakstzīme.",
+      "audience": "both",
+      "sources": [
+        "nist_sp800_63b_4"
+      ]
+    },
+    {
+      "id": "P06",
+      "title": "Neuzspied mehāniskas kompozīcijas prasības",
+      "guidance": "Obligāts lielais burts, mazais burts, cipars un speciālais simbols rada paredzamus apiešanas paradumus un neaizstāj garumu, bloķējamo paroļu sarakstus un mēģinājumu ierobežošanu.",
+      "audience": "service",
+      "sources": [
+        "nist_sp800_63b_4",
+        "owasp_asvs_5_v6_2",
+        "ncsc_password_policy"
+      ]
+    },
+    {
+      "id": "P07",
+      "title": "Nemainiet paroles tikai kalendāra dēļ",
+      "guidance": "Paroli maina, ja ir pierādījumi vai pamatotas aizdomas par kompromitāciju vai ja tā atkārtoti lietota citā kompromitētā servisā. Patvaļīga periodiska maiņa nav jāprasa.",
+      "audience": "both",
+      "sources": [
+        "nist_sp800_63b_4",
+        "owasp_asvs_5_v6_2"
+      ]
+    },
+    {
+      "id": "P08",
+      "title": "Bloķē bieži lietotas un kompromitētas paroles",
+      "guidance": "Pakalpojumam jāatsaka bieži lietotas, paredzamas un kompromitētas paroles un saprotami jāizskaidro atteikuma iemesls.",
+      "audience": "service",
+      "sources": [
+        "nist_sp800_63b_4",
+        "owasp_asvs_5_v6_2"
+      ]
+    },
+    {
+      "id": "P09",
+      "title": "Atļauj paroļu pārvaldniekus, ielīmēšanu un garas paroles",
+      "guidance": "Pakalpojumam jāatļauj ielīmēšana un automātiskā aizpilde, jāpieņem plašs rakstzīmju kopums, tostarp atstarpes, jāverificē parole bez patvaļīgas pārveidošanas un jāatbalsta vismaz 64 rakstzīmes.",
+      "audience": "service",
+      "sources": [
+        "nist_sp800_63b_4",
+        "owasp_asvs_5_v6_2"
+      ]
+    },
+    {
+      "id": "P10",
+      "title": "Sargā atkopšanas ceļus un ātri reaģē uz kompromitāciju",
+      "guidance": "Īpaši sargā galveno e-pastu un atkopšanas mehānismus. Ja parole varētu būt kompromitēta, nomaini to, kur iespējams atsauc vecās sesijas un pārskati konta atkopšanas iestatījumus.",
+      "audience": "user",
+      "sources": [
+        "enisa_cyber_hygiene"
+      ]
+    }
+  ]
+}
