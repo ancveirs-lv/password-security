@@ -13,6 +13,15 @@ class Tests(unittest.TestCase):
         en=json.loads((ROOT/'data/guidance.en.json').read_text())['rules']
         x=next(i for i in en if i['id']=='P05')
         self.assertIn('not magic',x['guidance'].lower())
+    def test_workflow_runner_pin(self):
+        for filename in (
+            ".github/workflows/ci.yml",
+            ".github/workflows/link-health.yml",
+        ):
+            text=(ROOT/filename).read_text(encoding="utf-8")
+            self.assertIn("runs-on: ubuntu-24.04",text)
+            self.assertNotIn("runs-on: ubuntu-latest",text)
+
     def test_service_rules_present(self):
         en=json.loads((ROOT/'data/guidance.en.json').read_text())['rules']
         self.assertTrue(any(x['audience']=='service' for x in en))
